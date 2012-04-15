@@ -1,0 +1,1 @@
+This is a toy project to teach myself OpenGL and 3D rendering.
