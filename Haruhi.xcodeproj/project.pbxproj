@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11498E98153B6FB000DD2324 /* SDSceneRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11498E97153B6FB000DD2324 /* SDSceneRenderer.m */; };
+		11498E9B153B761E00DD2324 /* SDMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11498E9A153B761E00DD2324 /* SDMainController.m */; };
+		11498E9E153B78AF00DD2324 /* SDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11498E9D153B78AF00DD2324 /* SDController.m */; };
 		1192AA35153B3845007D2F63 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1192AA34153B3845007D2F63 /* Cocoa.framework */; };
 		1192AA3F153B3845007D2F63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1192AA3D153B3845007D2F63 /* InfoPlist.strings */; };
 		1192AA41153B3845007D2F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1192AA40153B3845007D2F63 /* main.m */; };
@@ -17,6 +20,9 @@
 		1192AA54153B3845007D2F63 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1192AA34153B3845007D2F63 /* Cocoa.framework */; };
 		1192AA5C153B3845007D2F63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1192AA5A153B3845007D2F63 /* InfoPlist.strings */; };
 		1192AA5F153B3845007D2F63 /* HaruhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1192AA5E153B3845007D2F63 /* HaruhiTests.m */; };
+		11DF897E153B464E00D9C9DF /* SDOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF897D153B464E00D9C9DF /* SDOpenGLView.m */; };
+		11DF8985153B645E00D9C9DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DF8984153B645E00D9C9DF /* QuartzCore.framework */; };
+		11DF8987153B646400D9C9DF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DF8986153B646400D9C9DF /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11498E94153B6F6300DD2324 /* SDRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDRendering.h; sourceTree = "<group>"; };
+		11498E96153B6FB000DD2324 /* SDSceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSceneRenderer.h; sourceTree = "<group>"; };
+		11498E97153B6FB000DD2324 /* SDSceneRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSceneRenderer.m; sourceTree = "<group>"; };
+		11498E99153B761E00DD2324 /* SDMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDMainController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		11498E9A153B761E00DD2324 /* SDMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SDMainController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		11498E9C153B78AF00DD2324 /* SDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDController.h; sourceTree = "<group>"; };
+		11498E9D153B78AF00DD2324 /* SDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDController.m; sourceTree = "<group>"; };
 		1192AA30153B3844007D2F63 /* Haruhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haruhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1192AA34153B3845007D2F63 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1192AA37153B3845007D2F63 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +62,10 @@
 		1192AA5B153B3845007D2F63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1192AA5D153B3845007D2F63 /* HaruhiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaruhiTests.h; sourceTree = "<group>"; };
 		1192AA5E153B3845007D2F63 /* HaruhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaruhiTests.m; sourceTree = "<group>"; };
+		11DF897C153B464E00D9C9DF /* SDOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDOpenGLView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		11DF897D153B464E00D9C9DF /* SDOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SDOpenGLView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		11DF8984153B645E00D9C9DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		11DF8986153B646400D9C9DF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +74,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1192AA35153B3845007D2F63 /* Cocoa.framework in Frameworks */,
+				11DF8987153B646400D9C9DF /* OpenGL.framework in Frameworks */,
+				11DF8985153B645E00D9C9DF /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				1192AA34153B3845007D2F63 /* Cocoa.framework */,
+				11DF8986153B646400D9C9DF /* OpenGL.framework */,
+				11DF8984153B645E00D9C9DF /* QuartzCore.framework */,
 				1192AA52153B3845007D2F63 /* SenTestingKit.framework */,
 				1192AA36153B3845007D2F63 /* Other Frameworks */,
 			);
@@ -117,6 +138,15 @@
 				1192AA49153B3845007D2F63 /* MainMenu.xib */,
 				1192AA46153B3845007D2F63 /* SDAppDelegate.h */,
 				1192AA47153B3845007D2F63 /* SDAppDelegate.m */,
+				11498E9C153B78AF00DD2324 /* SDController.h */,
+				11498E9D153B78AF00DD2324 /* SDController.m */,
+				11498E99153B761E00DD2324 /* SDMainController.h */,
+				11498E9A153B761E00DD2324 /* SDMainController.m */,
+				11DF897C153B464E00D9C9DF /* SDOpenGLView.h */,
+				11DF897D153B464E00D9C9DF /* SDOpenGLView.m */,
+				11498E94153B6F6300DD2324 /* SDRendering.h */,
+				11498E96153B6FB000DD2324 /* SDSceneRenderer.h */,
+				11498E97153B6FB000DD2324 /* SDSceneRenderer.m */,
 				1192AA3B153B3845007D2F63 /* Supporting Files */,
 			);
 			path = Haruhi;
@@ -264,6 +294,10 @@
 			files = (
 				1192AA41153B3845007D2F63 /* main.m in Sources */,
 				1192AA48153B3845007D2F63 /* SDAppDelegate.m in Sources */,
+				11DF897E153B464E00D9C9DF /* SDOpenGLView.m in Sources */,
+				11498E98153B6FB000DD2324 /* SDSceneRenderer.m in Sources */,
+				11498E9B153B761E00DD2324 /* SDMainController.m in Sources */,
+				11498E9E153B78AF00DD2324 /* SDController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

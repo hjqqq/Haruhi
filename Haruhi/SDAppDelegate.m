@@ -10,8 +10,6 @@
 
 @implementation SDAppDelegate
 
-@synthesize window = window_;
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 }
 

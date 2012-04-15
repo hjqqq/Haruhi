@@ -1,13 +1,15 @@
 //
-//  SDAppDelegate.h
+//  SDSceneRenderer.h
 //  Haruhi
 //
 //  Created by Sylvain Defresne on 15/04/2012.
 //  Copyright (c) 2012 Sylvain Defresne. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "SDRendering.h"
 
-@interface SDAppDelegate : NSObject <NSApplicationDelegate>
+#import <Foundation/Foundation.h>
+
+@interface SDSceneRenderer : NSObject<SDRendering>
 
 @end

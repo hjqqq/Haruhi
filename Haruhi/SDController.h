@@ -1,5 +1,5 @@
 //
-//  SDAppDelegate.h
+//  SDController.h
 //  Haruhi
 //
 //  Created by Sylvain Defresne on 15/04/2012.
@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SDAppDelegate : NSObject <NSApplicationDelegate>
+@interface SDController : NSResponder
+
+- (void)advanceTimeBy:(float)deltaTime;
 
 @end
