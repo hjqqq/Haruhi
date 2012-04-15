@@ -35,19 +35,19 @@
 		1192AA37153B3845007D2F63 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1192AA38153B3845007D2F63 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1192AA39153B3845007D2F63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1192AA3C153B3845007D2F63 /* Haruhi-Info.plist */ = {isa = PBXFileReference; path = "Haruhi-Info.plist"; sourceTree = "<group>"; };
+		1192AA3C153B3845007D2F63 /* Haruhi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Haruhi-Info.plist"; sourceTree = "<group>"; };
 		1192AA3E153B3845007D2F63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1192AA40153B3845007D2F63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1192AA42153B3845007D2F63 /* Haruhi-Prefix.pch */ = {isa = PBXFileReference; path = "Haruhi-Prefix.pch"; sourceTree = "<group>"; };
+		1192AA42153B3845007D2F63 /* Haruhi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Haruhi-Prefix.pch"; sourceTree = "<group>"; };
 		1192AA44153B3845007D2F63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		1192AA46153B3845007D2F63 /* SDAppDelegate.h */ = {isa = PBXFileReference; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		1192AA46153B3845007D2F63 /* SDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
 		1192AA47153B3845007D2F63 /* SDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
 		1192AA4A153B3845007D2F63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1192AA51153B3845007D2F63 /* HaruhiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaruhiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1192AA52153B3845007D2F63 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1192AA59153B3845007D2F63 /* HaruhiTests-Info.plist */ = {isa = PBXFileReference; path = "HaruhiTests-Info.plist"; sourceTree = "<group>"; };
+		1192AA59153B3845007D2F63 /* HaruhiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HaruhiTests-Info.plist"; sourceTree = "<group>"; };
 		1192AA5B153B3845007D2F63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1192AA5D153B3845007D2F63 /* HaruhiTests.h */ = {isa = PBXFileReference; path = HaruhiTests.h; sourceTree = "<group>"; };
+		1192AA5D153B3845007D2F63 /* HaruhiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaruhiTests.h; sourceTree = "<group>"; };
 		1192AA5E153B3845007D2F63 /* HaruhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaruhiTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,9 +114,9 @@
 		1192AA3A153B3845007D2F63 /* Haruhi */ = {
 			isa = PBXGroup;
 			children = (
+				1192AA49153B3845007D2F63 /* MainMenu.xib */,
 				1192AA46153B3845007D2F63 /* SDAppDelegate.h */,
 				1192AA47153B3845007D2F63 /* SDAppDelegate.m */,
-				1192AA49153B3845007D2F63 /* MainMenu.xib */,
 				1192AA3B153B3845007D2F63 /* Supporting Files */,
 			);
 			path = Haruhi;
@@ -326,9 +326,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -353,10 +355,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -437,6 +441,7 @@
 				1192AA64153B3845007D2F63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1192AA65153B3845007D2F63 /* Build configuration list for PBXNativeTarget "HaruhiTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +450,7 @@
 				1192AA67153B3845007D2F63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

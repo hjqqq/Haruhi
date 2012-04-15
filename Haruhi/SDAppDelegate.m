@@ -10,11 +10,9 @@
 
 @implementation SDAppDelegate
 
-@synthesize window = _window;
+@synthesize window = window_;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-  // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 }
 
 @end

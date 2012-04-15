@@ -10,23 +10,12 @@
 
 @implementation HaruhiTests
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
+- (void)setUp {
+  [super setUp];
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in HaruhiTests");
+- (void)tearDown {
+  [super tearDown];
 }
 
 @end
