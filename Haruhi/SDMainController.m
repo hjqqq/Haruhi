@@ -9,12 +9,12 @@
 #import "SDMainController.h"
 
 #import "SDOpenGLView.h"
-#import "SDRendering.h"
+#import "SDRenderer.h"
 #import "SDSceneRenderer.h"
 
 @interface SDMainController ()
 
-@property (strong, nonatomic) id<SDRendering> renderer;
+@property (strong, nonatomic) id<SDRenderer> renderer;
 
 @end
 

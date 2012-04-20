@@ -1,5 +1,5 @@
 //
-//  SDRendering.h
+//  SDRenderer.h
 //  Haruhi
 //
 //  Created by Sylvain Defresne on 15/04/2012.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol SDRendering <NSObject>
+@protocol SDRenderer <NSObject>
 
 - (void)render;
 - (void)setViewPortRect:(NSRect)frameRect;

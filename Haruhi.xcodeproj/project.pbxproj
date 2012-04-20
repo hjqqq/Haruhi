@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11498E94153B6F6300DD2324 /* SDRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDRendering.h; sourceTree = "<group>"; };
-		11498E96153B6FB000DD2324 /* SDSceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSceneRenderer.h; sourceTree = "<group>"; };
+		11498E94153B6F6300DD2324 /* SDRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDRenderer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		11498E96153B6FB000DD2324 /* SDSceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDSceneRenderer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		11498E97153B6FB000DD2324 /* SDSceneRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSceneRenderer.m; sourceTree = "<group>"; };
 		11498E99153B761E00DD2324 /* SDMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDMainController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		11498E9A153B761E00DD2324 /* SDMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SDMainController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -144,7 +144,7 @@
 				11498E9A153B761E00DD2324 /* SDMainController.m */,
 				11DF897C153B464E00D9C9DF /* SDOpenGLView.h */,
 				11DF897D153B464E00D9C9DF /* SDOpenGLView.m */,
-				11498E94153B6F6300DD2324 /* SDRendering.h */,
+				11498E94153B6F6300DD2324 /* SDRenderer.h */,
 				11498E96153B6FB000DD2324 /* SDSceneRenderer.h */,
 				11498E97153B6FB000DD2324 /* SDSceneRenderer.m */,
 				1192AA3B153B3845007D2F63 /* Supporting Files */,

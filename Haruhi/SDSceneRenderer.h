@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 Sylvain Defresne. All rights reserved.
 //
 
-#import "SDRendering.h"
+#import "SDRenderer.h"
 
 #import <Foundation/Foundation.h>
 
-@interface SDSceneRenderer : NSObject<SDRendering>
+@interface SDSceneRenderer : NSObject<SDRenderer>
 
 @end

@@ -9,12 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 @class SDController;
-@protocol SDRendering;
+@protocol SDRenderer;
 
 @interface SDOpenGLView : NSView
 
 @property SDController* controller;
-@property id<SDRendering> renderer;
+@property id<SDRenderer> renderer;
 @property (strong, readonly, nonatomic) NSOpenGLContext *openGLContext;
 
 - (id)initWithFrame:(NSRect)frameRect;

@@ -8,7 +8,7 @@
 
 #import "SDOpenGLView.h"
 
-#import "SDRendering.h"
+#import "SDRenderer.h"
 #import "SDController.h"
 
 #import <QuartzCore/QuartzCore.h>
