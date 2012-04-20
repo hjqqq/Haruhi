@@ -12,7 +12,7 @@
 
 @class SDOpenGLView;
 
-@interface SDMainController : SDController
+@interface SDMainController : NSResponder<SDController>
 
 @property (assign) IBOutlet SDOpenGLView* openGLView;
 

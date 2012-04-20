@@ -8,8 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SDController : NSResponder
+@protocol SDController <NSObject>
 
 - (void)advanceTimeBy:(float)deltaTime;
+
+- (void)keyDown:(NSEvent *)theEvent;
+- (void)keyUp:(NSEvent *)theEvent;
+- (void)mouseDown:(NSEvent *)theEvent;
+- (void)mouseUp:(NSEvent *)theEvent;
 
 @end

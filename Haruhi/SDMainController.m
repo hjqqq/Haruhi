@@ -29,4 +29,7 @@
   [openGLView_ setAnimating:YES];
 }
 
+- (void)advanceTimeBy:(float)deltaTime {
+}
+
 @end

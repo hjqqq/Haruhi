@@ -8,12 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class SDController;
+@protocol SDController;
 @protocol SDRenderer;
 
 @interface SDOpenGLView : NSView
 
-@property SDController* controller;
+@property id<SDController> controller;
 @property id<SDRenderer> renderer;
 @property (strong, readonly, nonatomic) NSOpenGLContext *openGLContext;
 
