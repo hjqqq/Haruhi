@@ -26,6 +26,7 @@
 - (void)awakeFromNib {
   renderer_ = [[SDSceneRenderer alloc] init];
   [openGLView_ setRenderer:renderer_];
+  [openGLView_ setController:self];
   [openGLView_ setAnimating:YES];
 }
 
