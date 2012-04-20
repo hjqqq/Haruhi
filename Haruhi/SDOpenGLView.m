@@ -96,6 +96,7 @@ static CVReturn SDDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 - (void)setAnimating:(BOOL)animating {
   if ([self isAnimating] == !animating) {
     if (animating) {
+      renderTime_ = CFAbsoluteTimeGetCurrent();
       CVDisplayLinkStart(displayLink_);
     } else {
       CVDisplayLinkStop(displayLink_);
