@@ -19,7 +19,7 @@
 - (void)drawView;
 
 - (void)setUpDisplayLink:(NSOpenGLPixelFormat*)pixelFormat;
-- (void)teadDownDisplayLink;
+- (void)tearDownDisplayLink;
 
 - (CVReturn)getFrameForTime:(const CVTimeStamp*)outputTime;
 
@@ -85,7 +85,7 @@ static CVReturn SDDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 }
 
 - (void)dealloc {
-  [self teadDownDisplayLink];
+  [self tearDownDisplayLink];
   [[NSNotificationCenter defaultCenter] removeObserver:notification_];
 }
 
@@ -183,7 +183,7 @@ static CVReturn SDDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
   CVDisplayLinkSetCurrentCGDisplayFromOpenGLContext(displayLink_, cglContext, cglPixelFormat);
 }
 
-- (void)teadDownDisplayLink {
+- (void)tearDownDisplayLink {
   CVDisplayLinkStop(displayLink_);
   CVDisplayLinkRelease(displayLink_);
 }
