@@ -10,7 +10,10 @@
 
 @protocol SDRenderer <NSObject>
 
+- (void)prepare;
 - (void)render;
+- (void)cleanup;
+
 - (void)setViewPortRect:(NSRect)frameRect;
 
 @end

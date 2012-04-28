@@ -135,7 +135,9 @@ static CVReturn SDDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
   [self withLockedContext:^{
     if (renderer != renderer_) {
       [[self openGLContext] makeCurrentContext];
+      [renderer_ cleanup];
       renderer_ = renderer;
+      [renderer_ prepare];
     }
   }];
 }
