@@ -8,7 +8,7 @@
 
 #import "SDSceneRenderer.h"
 
-#import <OpenGL/glu.h>
+#import <OpenGL/gl3.h>
 
 @implementation SDSceneRenderer
 
@@ -19,11 +19,6 @@
 
 - (void)setViewPortRect:(NSRect)frameRect {
   glViewport(0, 0, frameRect.size.width, frameRect.size.height);
-
-  glMatrixMode(GL_PROJECTION);
-  glLoadIdentity();
-  gluPerspective(30, frameRect.size.width / frameRect.size.height, 1.0, 1000.0);
-  glMatrixMode(GL_MODELVIEW);
 }
 
 @end
