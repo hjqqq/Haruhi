@@ -23,6 +23,8 @@
 
 - (CVReturn)getFrameForTime:(const CVTimeStamp*)outputTime;
 
+- (void)withLockedContext:(void (^)(void))block;
+
 @end
 
 // This is the display link C callback.  It need access to the private extension of
@@ -37,11 +39,11 @@ static CVReturn SDDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 @implementation SDOpenGLView {
   CVDisplayLinkRef displayLink_;
   CFAbsoluteTime renderTime_;
+  id<SDRenderer> renderer_;
   id notification_;
 }
 
 @synthesize controller = controller_;
-@synthesize renderer = renderer_;
 @synthesize openGLContext = openGLContext_;
 
 - (id)initWithFrame:(NSRect)frameRect {
@@ -115,9 +117,26 @@ static CVReturn SDDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 - (void)lockFocus {
   [super lockFocus];
   if ([[self openGLContext] view] != self) {
-    [[self openGLContext] setView:self];
-    [[self renderer] render];
+    [self withLockedContext:^{
+      [[self openGLContext] setView:self];
+      [[self openGLContext] makeCurrentContext];
+      [[self renderer] setViewPortRect:[self bounds]];
+      [[self renderer] render];
+    }];
   }
+}
+
+- (id<SDRenderer>)renderer {
+  return renderer_;
+}
+
+- (void)setRenderer:(id<SDRenderer>)renderer {
+  [self withLockedContext:^{
+    if (renderer != renderer_) {
+      [[self openGLContext] makeCurrentContext];
+      renderer_ = renderer;
+    }
+  }];
 }
 
 @end
@@ -149,32 +168,19 @@ static CVReturn SDDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 @implementation SDOpenGLView (PrivateMethods)
 
 - (void)reshape {
-  // This method will be called from the main thread when resizing the view.
-  // Lock the |CGContextObj| to serialize execution.
-  CGLLockContext([[self openGLContext] CGLContextObj]);
-
-  @try {
+  [self withLockedContext:^{
+    [[self openGLContext] makeCurrentContext];
     [[self renderer] setViewPortRect:[self bounds]];
     [[self openGLContext] update];
-  }
-  @finally {
-    CGLUnlockContext([[self openGLContext] CGLContextObj]);
-  }
+  }];
 }
 
 - (void)drawView {
-  // This method will be called from both the main thread and the display link
-  // worker thread.  Lock the |CGContextObj| to serialize execution.
-  CGLLockContext([[self openGLContext] CGLContextObj]);
-
-  @try {
+  [self withLockedContext:^{
     [[self openGLContext] makeCurrentContext];
     [[self renderer] render];
     [[self openGLContext] flushBuffer];
-  }
-  @finally {
-    CGLUnlockContext([[self openGLContext] CGLContextObj]);
-  }
+  }];
 }
 
 - (void)setUpDisplayLink:(NSOpenGLPixelFormat*)pixelFormat {
@@ -203,6 +209,17 @@ static CVReturn SDDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
     [self drawView];
   }
   return kCVReturnSuccess;
+}
+
+- (void)withLockedContext:(void (^)(void))block {
+  CGLLockContext([[self openGLContext] CGLContextObj]);
+
+  @try {
+    block();
+  }
+  @finally {
+    CGLUnlockContext([[self openGLContext] CGLContextObj]);
+  }
 }
 
 @end
