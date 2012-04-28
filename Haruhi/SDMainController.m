@@ -12,16 +12,11 @@
 #import "SDRenderer.h"
 #import "SDSceneRenderer.h"
 
-@interface SDMainController ()
-
-@property (strong, nonatomic) id<SDRenderer> renderer;
-
-@end
-
-@implementation SDMainController
+@implementation SDMainController {
+  SDSceneRenderer *renderer_;
+}
 
 @synthesize openGLView = openGLView_;
-@synthesize renderer = renderer_;
 
 - (void)awakeFromNib {
   renderer_ = [[SDSceneRenderer alloc] init];
