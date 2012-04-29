@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1123EDE7154D903400BD88F1 /* SDMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1123EDE6154D903400BD88F1 /* SDMatrix.cpp */; };
+		1123EDEC154D909E00BD88F1 /* SDVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1123EDEB154D909E00BD88F1 /* SDVector.cpp */; };
+		1123EDF0154D953A00BD88F1 /* libMaths.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1123EDDD154D737A00BD88F1 /* libMaths.dylib */; };
 		11498E98153B6FB000DD2324 /* SDSceneRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11498E97153B6FB000DD2324 /* SDSceneRenderer.m */; };
 		11498E9B153B761E00DD2324 /* SDMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11498E9A153B761E00DD2324 /* SDMainController.m */; };
 		1192AA35153B3845007D2F63 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1192AA34153B3845007D2F63 /* Cocoa.framework */; };
@@ -25,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1123EDEE154D942E00BD88F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1192AA27153B3844007D2F63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1123EDDC154D737A00BD88F1;
+			remoteInfo = Maths;
+		};
 		1192AA55153B3845007D2F63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1192AA27153B3844007D2F63 /* Project object */;
@@ -35,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1123EDDD154D737A00BD88F1 /* libMaths.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMaths.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1123EDE4154D901F00BD88F1 /* SDMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDMatrix.h; path = Maths/SDMatrix.h; sourceTree = "<group>"; };
+		1123EDE6154D903400BD88F1 /* SDMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDMatrix.cpp; path = Maths/SDMatrix.cpp; sourceTree = "<group>"; };
+		1123EDEA154D908D00BD88F1 /* SDVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDVector.h; path = Maths/SDVector.h; sourceTree = "<group>"; };
+		1123EDEB154D909E00BD88F1 /* SDVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDVector.cpp; path = Maths/SDVector.cpp; sourceTree = "<group>"; };
+		1123EDF2154D9E4E00BD88F1 /* SDMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDMacros.h; path = Base/SDMacros.h; sourceTree = "<group>"; };
+		1123EDF3154DA09F00BD88F1 /* SDVectorPrepare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDVectorPrepare.h; path = Maths/SDVectorPrepare.h; sourceTree = "<group>"; };
 		11498E94153B6F6300DD2324 /* SDRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDRenderer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		11498E96153B6FB000DD2324 /* SDSceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDSceneRenderer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		11498E97153B6FB000DD2324 /* SDSceneRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSceneRenderer.m; sourceTree = "<group>"; };
@@ -64,13 +81,22 @@
 		11DF897D153B464E00D9C9DF /* SDOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SDOpenGLView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		11DF8984153B645E00D9C9DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		11DF8986153B646400D9C9DF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		11EBD7EC154DDBFD000B261C /* SDVectorCleanup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDVectorCleanup.h; path = Maths/SDVectorCleanup.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1123EDDA154D737A00BD88F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1192AA2D153B3844007D2F63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1123EDF0154D953A00BD88F1 /* libMaths.dylib in Frameworks */,
 				1192AA35153B3845007D2F63 /* Cocoa.framework in Frameworks */,
 				11DF8987153B646400D9C9DF /* OpenGL.framework in Frameworks */,
 				11DF8985153B645E00D9C9DF /* QuartzCore.framework in Frameworks */,
@@ -89,9 +115,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1123EDE3154D8FFB00BD88F1 /* Maths */ = {
+			isa = PBXGroup;
+			children = (
+				1123EDE4154D901F00BD88F1 /* SDMatrix.h */,
+				1123EDE6154D903400BD88F1 /* SDMatrix.cpp */,
+				1123EDEA154D908D00BD88F1 /* SDVector.h */,
+				1123EDEB154D909E00BD88F1 /* SDVector.cpp */,
+				1123EDF3154DA09F00BD88F1 /* SDVectorPrepare.h */,
+				11EBD7EC154DDBFD000B261C /* SDVectorCleanup.h */,
+			);
+			name = Maths;
+			sourceTree = "<group>";
+		};
+		1123EDF1154D9E3300BD88F1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1123EDF2154D9E4E00BD88F1 /* SDMacros.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		1192AA25153B3844007D2F63 = {
 			isa = PBXGroup;
 			children = (
+				1123EDF1154D9E3300BD88F1 /* Base */,
+				1123EDE3154D8FFB00BD88F1 /* Maths */,
 				1192AA3A153B3845007D2F63 /* Haruhi */,
 				1192AA57153B3845007D2F63 /* HaruhiTests */,
 				1192AA33153B3845007D2F63 /* Frameworks */,
@@ -104,6 +153,7 @@
 			children = (
 				1192AA30153B3844007D2F63 /* Haruhi.app */,
 				1192AA51153B3845007D2F63 /* HaruhiTests.octest */,
+				1123EDDD154D737A00BD88F1 /* libMaths.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,7 +232,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1123EDDB154D737A00BD88F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		1123EDDC154D737A00BD88F1 /* Maths */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1123EDDE154D737A00BD88F1 /* Build configuration list for PBXNativeTarget "Maths" */;
+			buildPhases = (
+				1123EDD9154D737A00BD88F1 /* Sources */,
+				1123EDDA154D737A00BD88F1 /* Frameworks */,
+				1123EDDB154D737A00BD88F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maths;
+			productName = Maths;
+			productReference = 1123EDDD154D737A00BD88F1 /* libMaths.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		1192AA2F153B3844007D2F63 /* Haruhi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1192AA62153B3845007D2F63 /* Build configuration list for PBXNativeTarget "Haruhi" */;
@@ -194,6 +271,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1123EDEF154D942E00BD88F1 /* PBXTargetDependency */,
 			);
 			name = Haruhi;
 			productName = Haruhi;
@@ -243,6 +321,7 @@
 			targets = (
 				1192AA2F153B3844007D2F63 /* Haruhi */,
 				1192AA50153B3845007D2F63 /* HaruhiTests */,
+				1123EDDC154D737A00BD88F1 /* Maths */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +364,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1123EDD9154D737A00BD88F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1123EDE7154D903400BD88F1 /* SDMatrix.cpp in Sources */,
+				1123EDEC154D909E00BD88F1 /* SDVector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1192AA2C153B3844007D2F63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +396,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1123EDEF154D942E00BD88F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1123EDDC154D737A00BD88F1 /* Maths */;
+			targetProxy = 1123EDEE154D942E00BD88F1 /* PBXContainerItemProxy */;
+		};
 		1192AA56153B3845007D2F63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1192AA2F153B3844007D2F63 /* Haruhi */;
@@ -351,6 +444,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1123EDDF154D737A00BD88F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1123EDE0154D737A00BD88F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1192AA60153B3845007D2F63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -374,6 +483,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SRCROOT;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -397,6 +507,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SRCROOT;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -455,6 +566,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1123EDDE154D737A00BD88F1 /* Build configuration list for PBXNativeTarget "Maths" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1123EDDF154D737A00BD88F1 /* Debug */,
+				1123EDE0154D737A00BD88F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1192AA2A153B3844007D2F63 /* Build configuration list for PBXProject "Haruhi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
