@@ -23,11 +23,22 @@
                                   withName:@"DefaultShader"];
 
   perspectiveMatrixUniform_ = glGetUniformLocation([program_ program], "perspectiveMatrix");
+
+  glEnable(GL_CULL_FACE);
+  glCullFace(GL_BACK);
+  glFrontFace(GL_CW);
+
+  glEnable(GL_DEPTH_TEST);
+  glDepthMask(GL_TRUE);
+  glDepthFunc(GL_LEQUAL);
+  glDepthRange(0.0f, 1.0f);
 }
 
 - (void)render {
+  glClearDepth(1.0f);
   glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-  glClear(GL_COLOR_BUFFER_BIT);
+  glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+
   glUseProgram([program_ program]);
   glUseProgram(0);
 }
