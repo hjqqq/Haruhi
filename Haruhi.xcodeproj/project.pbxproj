@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1123EDD4154C9FB500BD88F1 /* SDOpenGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 1123EDD3154C9FB500BD88F1 /* SDOpenGLProgram.m */; };
 		1123EDE7154D903400BD88F1 /* SDMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1123EDE6154D903400BD88F1 /* SDMatrix.cpp */; };
 		1123EDEC154D909E00BD88F1 /* SDVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1123EDEB154D909E00BD88F1 /* SDVector.cpp */; };
 		1123EDF0154D953A00BD88F1 /* libMaths.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1123EDDD154D737A00BD88F1 /* libMaths.dylib */; };
-		11498E98153B6FB000DD2324 /* SDSceneRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11498E97153B6FB000DD2324 /* SDSceneRenderer.m */; };
+		11498E98153B6FB000DD2324 /* SDSceneRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11498E97153B6FB000DD2324 /* SDSceneRenderer.mm */; };
 		11498E9B153B761E00DD2324 /* SDMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11498E9A153B761E00DD2324 /* SDMainController.m */; };
 		1192AA35153B3845007D2F63 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1192AA34153B3845007D2F63 /* Cocoa.framework */; };
 		1192AA3F153B3845007D2F63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1192AA3D153B3845007D2F63 /* InfoPlist.strings */; };
@@ -25,6 +26,8 @@
 		11DF897E153B464E00D9C9DF /* SDOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF897D153B464E00D9C9DF /* SDOpenGLView.m */; };
 		11DF8985153B645E00D9C9DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DF8984153B645E00D9C9DF /* QuartzCore.framework */; };
 		11DF8987153B646400D9C9DF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DF8986153B646400D9C9DF /* OpenGL.framework */; };
+		11EBD7F0154DDE1E000B261C /* DefaultShader.f.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 11EBD7EE154DDE1E000B261C /* DefaultShader.f.glsl */; };
+		11EBD7F1154DDE1E000B261C /* DefaultShader.v.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 11EBD7EF154DDE1E000B261C /* DefaultShader.v.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1123EDD2154C9FB500BD88F1 /* SDOpenGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDOpenGLProgram.h; sourceTree = "<group>"; };
+		1123EDD3154C9FB500BD88F1 /* SDOpenGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDOpenGLProgram.m; sourceTree = "<group>"; };
 		1123EDDD154D737A00BD88F1 /* libMaths.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMaths.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		1123EDE4154D901F00BD88F1 /* SDMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDMatrix.h; path = Maths/SDMatrix.h; sourceTree = "<group>"; };
 		1123EDE6154D903400BD88F1 /* SDMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDMatrix.cpp; path = Maths/SDMatrix.cpp; sourceTree = "<group>"; };
@@ -54,7 +59,7 @@
 		1123EDF3154DA09F00BD88F1 /* SDVectorPrepare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SDVectorPrepare.h; path = Maths/SDVectorPrepare.h; sourceTree = "<group>"; };
 		11498E94153B6F6300DD2324 /* SDRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDRenderer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		11498E96153B6FB000DD2324 /* SDSceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDSceneRenderer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		11498E97153B6FB000DD2324 /* SDSceneRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSceneRenderer.m; sourceTree = "<group>"; };
+		11498E97153B6FB000DD2324 /* SDSceneRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SDSceneRenderer.mm; sourceTree = "<group>"; };
 		11498E99153B761E00DD2324 /* SDMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SDMainController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		11498E9A153B761E00DD2324 /* SDMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SDMainController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		11498E9C153B78AF00DD2324 /* SDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDController.h; sourceTree = "<group>"; };
@@ -82,6 +87,8 @@
 		11DF8984153B645E00D9C9DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		11DF8986153B646400D9C9DF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		11EBD7EC154DDBFD000B261C /* SDVectorCleanup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDVectorCleanup.h; path = Maths/SDVectorCleanup.h; sourceTree = "<group>"; };
+		11EBD7EE154DDE1E000B261C /* DefaultShader.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DefaultShader.f.glsl; path = Shaders/DefaultShader.f.glsl; sourceTree = "<group>"; };
+		11EBD7EF154DDE1E000B261C /* DefaultShader.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DefaultShader.v.glsl; path = Shaders/DefaultShader.v.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,11 +196,14 @@
 				11498E9C153B78AF00DD2324 /* SDController.h */,
 				11498E99153B761E00DD2324 /* SDMainController.h */,
 				11498E9A153B761E00DD2324 /* SDMainController.m */,
+				1123EDD2154C9FB500BD88F1 /* SDOpenGLProgram.h */,
+				1123EDD3154C9FB500BD88F1 /* SDOpenGLProgram.m */,
 				11DF897C153B464E00D9C9DF /* SDOpenGLView.h */,
 				11DF897D153B464E00D9C9DF /* SDOpenGLView.m */,
 				11498E94153B6F6300DD2324 /* SDRenderer.h */,
 				11498E96153B6FB000DD2324 /* SDSceneRenderer.h */,
-				11498E97153B6FB000DD2324 /* SDSceneRenderer.m */,
+				11498E97153B6FB000DD2324 /* SDSceneRenderer.mm */,
+				11EBD7ED154DDDA8000B261C /* Shaders */,
 				1192AA3B153B3845007D2F63 /* Supporting Files */,
 			);
 			path = Haruhi;
@@ -228,6 +238,15 @@
 				1192AA5A153B3845007D2F63 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11EBD7ED154DDDA8000B261C /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				11EBD7EE154DDE1E000B261C /* DefaultShader.f.glsl */,
+				11EBD7EF154DDE1E000B261C /* DefaultShader.v.glsl */,
+			);
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +353,8 @@
 				1192AA3F153B3845007D2F63 /* InfoPlist.strings in Resources */,
 				1192AA45153B3845007D2F63 /* Credits.rtf in Resources */,
 				1192AA4B153B3845007D2F63 /* MainMenu.xib in Resources */,
+				11EBD7F0154DDE1E000B261C /* DefaultShader.f.glsl in Resources */,
+				11EBD7F1154DDE1E000B261C /* DefaultShader.v.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,8 +401,9 @@
 				1192AA41153B3845007D2F63 /* main.m in Sources */,
 				1192AA48153B3845007D2F63 /* SDAppDelegate.m in Sources */,
 				11DF897E153B464E00D9C9DF /* SDOpenGLView.m in Sources */,
-				11498E98153B6FB000DD2324 /* SDSceneRenderer.m in Sources */,
+				11498E98153B6FB000DD2324 /* SDSceneRenderer.mm in Sources */,
 				11498E9B153B761E00DD2324 /* SDMainController.m in Sources */,
+				1123EDD4154C9FB500BD88F1 /* SDOpenGLProgram.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
